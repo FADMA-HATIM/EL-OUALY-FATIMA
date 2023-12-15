@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>entre your nomber 👨‍👨‍👧</label><input id="numbere"></input><br>
+    <label>the result:      </label><input id="result"></input><br>
+    <button>submit</button>
+    <script>
+        let fun =(a,b)=>{
+        return a+b;
+        }
+        document.write(fun(3,5));
+        const display =(age=19)=>age;
+        console.log(display());
+        //default parametres we give it first
+        //rest parametre its uncountable = spread ... give us the values
+        
+        const yy=(...age)=>{
+            for(let i=0;i<age.length;i++){
+            return(age[i]);
+        }}
+        console.log(10,12,16,456);
+        let tab=['orange','apple','banana'];
+        let countrise=['morocco','algeria'];
+        console.log(...countrise,...tab);
+        let fruit='apple';
+        //console.log(fruit.includes('a'));
+        //console.log(fruit.startsWith('b'));
+        console.log(fruit.padStart(8,'#'));
+        //trim removes space
+        let nom= 'fatima';
+        console.log(Array.from(nom));
+        const dis =(tab,key)=>{
+            console.log(`${key} ; ${tab}`);
+        }
+        tab.forEach(dis);
+        for(let tabs of tab){
+            console.log(tab);
+        }
+        //for array functions this is map and foreach and filter some every reduce
+        let numberes=[1,2,3,4,5];
+        numbere=numberes.filter(function(value){
+        return value<=2;
+        })
+        console.log(numbere);
+        let str = 'morocco,guelmim';
+        console.log(Array.from(str));
+        let alphabets='ABCDEFG';
+        console.log(Array.from(alphabets));
+        console.log(alphabets.split(':'))
+        const key =countrise.keys()
+        for(let keys of key ){
+            console.log(key);
+        }
+        console.log(countrise.findIndex((value)=>{
+            return value.startsWith("mo")
+        }))
+
+       const displa=function(countrise,key){
+        console.log(`${key}:${countrise}`)
+       }
+       console.log(countrise.forEach(displa))
+       for(let i=0;i<countrise.length;i++){
+        console.log(`${i}:${countrise[i]}`)
+       }
+       //with map we can change the elements of tableit w
+       const numb=[1,2,3,4,5];
+       let sum=0;
+       console.log(numb.map(function(value){
+        return value*2
+       }))
+       console.log(numb.filter(function(value){
+        return value<=2}));
+       console.log(numb.some(function(value){
+        return value>2}))
+       console.log(numb.reduce(function(accumalator,value){
+        return accumalator+value
+       },0));
+       let num=document.getElementById('numbere').value='';
+       let result=Math.floor(num);
+       document.getElementById('result').value=result
+       //let ba=prompt('entre your number');
+       //console.log(Math.pow(ba))
+       //sign trunc cbrt
+       let nnn=Number.MIN_SAFE_INTEGER;
+       console.log(nnn);
+       console.log(Number.isSafeInteger(12))//isInteger isNan
+       let pays=["morocco","egypt","morocco","tunusia"];
+       let set = new Set();
+       set.add('maroc');
+       console.log(set)
+       let map=new Map;
+       map.set(1,{})
+       map.set(true,'fatima')
+       map.set('1','apple');console.log(map);
+       console.log(...pays);
+       //distractring
+       let [b,a]=pays;
+       console.log(a);
+       //classes
+       class Car{
+        constructor(name,year){
+            this.name=name;
+            this.year=year;
+
+        }
+        start(){
+            
+        }
+       }
+       
+
+
+
+
+       
+       
+
+
+
+
+
+
+        </script>
+        
+</body>
+</html>

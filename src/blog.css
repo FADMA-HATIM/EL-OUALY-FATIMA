@@ -1,0 +1,63 @@
+/* Ajoutez ces styles à votre fichier BlogPage.css */
+
+h2 {
+    color: #3498db; /* Couleur du titre principal */
+  }
+  
+  div {
+    margin: 20px 0;
+  }
+  
+  h3 {
+    color: #2c3e50; /* Couleur du titre du blog */
+  }
+  
+  p {
+    color: #34495e; /* Couleur du contenu du blog */
+  }
+  
+  button {
+    background-color: #e74c3c; /* Couleur de fond du bouton Supprimer */
+    color: #fff; /* Couleur du texte du bouton Supprimer */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #c0392b; /* Couleur de fond du bouton Supprimer au survol */
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2c3e50; /* Couleur du texte des labels */
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #bdc3c7; /* Couleur de la bordure des champs de saisie */
+    border-radius: 4px;
+  }
+  
+  button[type="button"] {
+    background-color: #3498db; /* Couleur de fond du bouton Créer le Blog */
+    color: #fff; /* Couleur du texte du bouton Créer le Blog */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #2980b9; /* Couleur de fond du bouton Créer le Blog au survol */
+  }
+  
